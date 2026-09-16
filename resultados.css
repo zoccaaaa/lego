@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #FFD502;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .esquerda {
+        display: flex;
+        padding-left: 100px;
+        gap: 20px;
+
+
+
+        >img {
+            width: 60px;
+
+        }
+
+        .links {
+            padding-left: 60px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            >a {
+                
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                font-weight: 600;
+                color: black;
+                transition: 0.3s;
+
+                &:hover{
+                    color: #BC0000;
+                }
+
+
+                
+            }
+
+             .ativo {
+
+            padding-top: 2.5px;
+            color: #BC0000;
+            border-bottom: solid red;
+            height: 40px;
+            color: #BC0000;
+            
+        }
+
+
+        }
+
+       
+    }
+
+
+    .direita {
+        display: flex;
+        align-items: center;
+        padding-right: 90px;
+        cursor: pointer;
+
+        .conteudo {
+            border: solid whitesmoke 1px;
+            border-radius: 15px;
+            background-color: #E3000B;
+            display: flex;
+            height: 45px;
+            align-items: center;
+            justify-content: space-between;
+             transition: 0.3s;
+
+             &:hover{
+                background-color: #BC0000;
+             }
+        
+
+            >a {
+                text-decoration: none;
+                font-weight: 600;
+                color: whitesmoke;
+                padding-right: 30px;
+
+
+            }
+
+            >img {
+                width: 70px;
+            }
+        }
+
+    }
+
+}
