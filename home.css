@@ -542,7 +542,7 @@ header {
 }
 .c4{
     background-color: #25306A;
-    height: 900px;
+    height: 500px;
     
 .heroi{
     background-color: #25306A;
@@ -587,7 +587,7 @@ header {
 
 .c5{
     background-color: #25306A;
-    height: 900px;
+    height: 700px;
     padding-top: 80px;
     display: flex;
     justify-content: center;
@@ -784,6 +784,39 @@ header {
         }
 
     }
+}
+
+
+.rodape{
+    
+    background-image: url(Imagens/fundor.png);
+    display: flex;
+
+    
+
+
+
+   .e2{
+     img{
+        width: 50px;
+
+     }
+
+
+     .logos{
+        img{
+            width: 50px;
+        }
+     }
+      
+
+
+   }
+
+   .d2{
+
+   }
+
 }
 
 
