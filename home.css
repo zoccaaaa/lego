@@ -1,4 +1,241 @@
-*{
-  margin: o;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: #FFD502;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .esquerda {
+        display: flex;
+        padding-left: 100px;
+        gap: 20px;
+
+
+
+        >img {
+            width: 60px;
+
+        }
+
+        .links {
+            padding-left: 60px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            >a {
+                
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                font-weight: 600;
+                color: black;
+                transition: 0.3s;
+
+                &:hover{
+                    color: #BC0000;
+                }
+
+
+                
+            }
+
+             .ativo {
+
+            padding-top: 2.5px;
+            color: #BC0000;
+            border-bottom: solid red;
+            height: 40px;
+            color: #BC0000;
+            
+        }
+
+
+        }
+
+       
+    }
+
+
+    .direita {
+        display: flex;
+        align-items: center;
+        padding-right: 90px;
+        cursor: pointer;
+
+        .conteudo {
+            border: solid whitesmoke 1px;
+            border-radius: 15px;
+            background-color: #E3000B;
+            display: flex;
+            height: 45px;
+            align-items: center;
+            justify-content: space-between;
+             transition: 0.3s;
+
+             &:hover{
+                background-color: #BC0000;
+             }
+        
+
+            >a {
+                text-decoration: none;
+                font-weight: 600;
+                color: whitesmoke;
+                padding-right: 30px;
+
+
+            }
+
+            >img {
+                width: 70px;
+            }
+        }
+
+    }
+
+}
+
+
+.p1 {
+
+    display: flex;
+    background-image: url("Imagens/fundo.png");
+    height: 700px;
+    background-size: cover;
+
+
+    .c1 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 80px;
+        gap: 10px;
+
+        >h2 {
+            display: flex;
+            color: whitesmoke;
+            font-weight: 400;
+
+        }
+
+        >h1 {
+            font-size: 70px;
+            width: 550px;
+            color: whitesmoke;
+
+            .vermelho {
+                color: red;
+            }
+
+            .amarelo {
+                color: #E5BF00;
+            }
+
+            .azul {
+                color: #29CDC2;
+            }
+
+            .verde {
+                color: #49E563;
+            }
+
+            .laranja {
+                color: #FF9100;
+            }
+
+            .roxo {
+                color: #EA00FF;
+            }
+
+            .rosa {
+                color: #FF93D4;
+            }
+
+            .ciano {
+                color: #00DACB;
+            }
+
+
+
+        }
+
+        >p {
+            display: flex;
+            color: whitesmoke;
+            width: 660px;
+
+        }
+
+        .botoes {
+            padding-top: 30px;
+            display: flex;
+            gap: 40px;
+
+
+            .b1 {
+
+                cursor: pointer;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &:hover {
+                    filter: brightness(1.2);
+                }
+
+                >img {
+
+                    width: 150px;
+
+                }
+
+                button {
+                    cursor: pointer;
+                    color: whitesmoke;
+                    background-color: #E5BF00;
+                    border: none;
+                    height: 45px;
+                    width: 200px;
+                    font-weight: 500;
+                }
+            }
+
+            .b2 {
+                cursor: pointer;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &:hover {
+                    filter: brightness(1.2);
+                }
+
+                img {
+
+                    width: 150px;
+                }
+
+                button {
+                    cursor: pointer;
+                    color: whitesmoke;
+                    background-color: #BC0000;
+                    border: none;
+                    height: 45px;
+                    width: 200px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+    }
+
 }
