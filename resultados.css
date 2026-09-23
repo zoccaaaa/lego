@@ -186,7 +186,7 @@ header {
                 font-size: 20px;
                 margin-top: 25px;
                 font-weight: normal;
-                margin-left: 825px;
+                margin-left: 810px;
             }
 
         }
@@ -488,4 +488,161 @@ header {
     font-size: 25px;
     color: #222;
     line-height: 1.1;
+}
+.rodape {
+    margin-top: -7px;
+    background-color: #E9EEEA;
+    display: flex;
+    justify-content: space-between;
+    min-height: 350px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 40px;
+
+    .e2 {
+        padding-left: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        img {
+            margin-top: 10px;
+            width: 140px;
+
+        }
+
+
+        .logos {
+
+            display: flex;
+            gap: 20px;
+
+            img {
+                width: 50px;
+            }
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+
+
+    }
+
+    .d2 {
+        padding-top: 30px;
+        padding-right: 200px;
+        display: flex;
+        gap: 100px;
+
+        .cont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+
+            >h2 {
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+}
+
+
+.rodapef {
+
+    background-color: #E9EEEA;
+    border-top: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    gap: 24px;
+    padding-left: 60px;
+    padding-right: 80px;
+
+    
+
+    >p {
+        font-size: 10px;
+        max-width: 600px;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    >img {
+        width: 60px;
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 36px;
+        padding: 36px 24px;
+
+        .e2 {
+            padding-left: 0;
+            gap: 20px;
+        }
+
+        .d2 {
+            width: min(100%, 760px);
+            box-sizing: border-box;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            justify-content: center;
+
+            .cont {
+                gap: 18px;
+            }
+        }
+    }
+
+    .rodapef {
+        padding: 20px 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .rodape {
+        gap: 32px;
+
+        .d2 {
+            grid-template-columns: 1fr;
+            gap: 28px;
+
+            .cont {
+                gap: 12px;
+            }
+        }
+    }
+
+    .rodapef {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 20px 24px;
+        >p {
+            max-width: 100%;
+            
+        }
+    }
 }
