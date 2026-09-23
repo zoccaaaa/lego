@@ -333,4 +333,12 @@ header {
         }
     }
 }
+.legos{
+    margin-top: -30px;
+    display: flex;
+    gap: 950px;
+   img{
+    width:300px;
+   }
+}
 
