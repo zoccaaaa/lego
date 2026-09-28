@@ -228,7 +228,23 @@
 
     </div>
 
+    <script>
+        const imagemAnimada = document.querySelector(".c2 > img");
+        let ultimaPosicaoScroll = window.scrollY;
 
+        window.addEventListener("scroll", () => {
+            const posicaoAtual = window.scrollY;
+            const rolandoParaBaixo = posicaoAtual > ultimaPosicaoScroll;
+            const limitesImagem = imagemAnimada.getBoundingClientRect();
+            const imagemNaTela = limitesImagem.top < window.innerHeight && limitesImagem.bottom > 0;
+
+            if (rolandoParaBaixo && imagemNaTela && !imagemAnimada.classList.contains("animar")) {
+                imagemAnimada.classList.add("animar");
+            }
+
+            ultimaPosicaoScroll = posicaoAtual;
+        }, { passive: true });
+    </script>
 </body>
 
 </html>
