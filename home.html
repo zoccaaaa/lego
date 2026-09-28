@@ -230,6 +230,7 @@
 
     <script>
         const imagemAnimada = document.querySelector(".c2 > img");
+        const imagemD1 = document.querySelector(".d1 img");
         let ultimaPosicaoScroll = window.scrollY;
 
         window.addEventListener("scroll", () => {
@@ -242,9 +243,18 @@
                 imagemAnimada.classList.add("animar");
             }
 
+            const limitesD1 = imagemD1.getBoundingClientRect();
+            const imagemD1NaTela = limitesD1.top < window.innerHeight && limitesD1.bottom > 0;
+
+            if (rolandoParaBaixo && imagemD1NaTela && !imagemD1.classList.contains("animar-d1")) {
+                imagemD1.classList.add("animar-d1");
+            }
+
             ultimaPosicaoScroll = posicaoAtual;
         }, { passive: true });
+
     </script>
 </body>
 
 </html>
+

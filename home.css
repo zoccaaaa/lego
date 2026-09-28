@@ -29,6 +29,17 @@
   }
 }
 
+@-webkit-keyframes rotate-scale-down {
+    0% { -webkit-transform: scale(1) rotate(0); transform: scale(1) rotate(0); opacity: 0; }
+    100% { -webkit-transform: scale(0.8) rotate(360deg); transform: scale(0.8) rotate(360deg); opacity: 1; }
+}
+@keyframes rotate-scale-down {
+    0% { transform: scale(1) rotate(0); opacity: 0; }
+    100% { transform: scale(0.8) rotate(360deg); opacity: 1; }
+}
+
+
+
 header {
     background-color: #FFD502;
     top: 0;
@@ -361,6 +372,29 @@ header {
     }
 
 }
+
+@keyframes brilho-letra {
+    0%, 12% {
+        text-shadow: 0 0 8px currentColor, 0 0 18px currentColor;
+        filter: brightness(1.5);
+    }
+    16%, 100% {
+        text-shadow: none;
+        filter: brightness(1);
+    }
+}
+
+.p1 .c1 > h1:hover span {
+    animation: brilho-letra 1.6s ease-in-out infinite;
+}
+
+.p1 .c1 > h1:hover span:nth-of-type(2) { animation-delay: 0.2s; }
+.p1 .c1 > h1:hover span:nth-of-type(3) { animation-delay: 0.4s; }
+.p1 .c1 > h1:hover span:nth-of-type(4) { animation-delay: 0.6s; }
+.p1 .c1 > h1:hover span:nth-of-type(5) { animation-delay: 0.8s; }
+.p1 .c1 > h1:hover span:nth-of-type(6) { animation-delay: 1s; }
+.p1 .c1 > h1:hover span:nth-of-type(7) { animation-delay: 1.2s; }
+.p1 .c1 > h1:hover span:nth-of-type(8) { animation-delay: 1.4s; }
 
 
 .p2 {
@@ -779,14 +813,52 @@ header {
         }
 
         .d1 {
+            img {
+                display: block;
+                opacity: 0;
 
-            @media(max-width: 1250px) {
-                display: none;
+                &.animar-d1 {
+                    -webkit-animation: rotate-scale-down 0.65s linear both;
+                    animation: rotate-scale-down 0.65s linear both;
+                }
             }
         }
 
     }
 
+}
+
+@media (max-width: 1250px) {
+    .c4 .heroi {
+        align-items: center;
+        gap: 24px;
+        padding: 40px 24px;
+    }
+
+    .c4 .heroi .d1 {
+        display: none;
+    }
+
+    .c4 .heroi .e1 {
+        padding-left: 0;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .c4 .heroi .e1 > p {
+        width: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .c4 .heroi {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .c4 .heroi .d1 img {
+        width: min(75vw, 400px);
+    }
 }
 
 
